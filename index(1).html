@@ -240,7 +240,7 @@ img{display:block}
 
 <script>
 // برای افزودن آیتم: یک خط به دسته مربوطه اضافه کنید: ['نام', قیمت, 'نام-فایل-عکس (اختیاری)', 'ایموجی (اختیاری)']
-// عکس‌ها داخل پوشه images کنار همین فایل باشند. اگر عکس نبود یا لود نشد، ایموجی نمایش داده می‌شود.
+// عکس‌ها داخل پوشه Images کنار همین فایل باشند. اگر عکس نبود یا لود نشد، ایموجی نمایش داده می‌شود.
 const menu=[
 {name:'قهوه',emoji:'☕',items:[
  ['اسپرسو',110000,'1.png'],
@@ -291,7 +291,7 @@ const menu=[
 ['طالبی',0,'42.jpg'],
 ['زعفران',0,'43.jpg']]}
 ].map(c=>({...c,items:c.items.map(([name,price,img='',emoji])=>({
-  name,price,img:img?'images/'+img:'',emoji:emoji||c.emoji}))}));
+  name,price,img:img?'Images/'+img:'',emoji:emoji||c.emoji}))}));
 
 const $=id=>document.getElementById(id);
 const content=$('content'), tabsEl=$('tabs'), header=$('siteHeader');
